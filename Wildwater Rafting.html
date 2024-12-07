@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/rafting/rafting.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildwater Rafting</title>
+  <link href="./Wildwater Rafting_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./Wildwater Rafting_files/styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="./Wildwater Rafting_files/logo.png" alt="Wildwater Rafting">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Rafting Packages</a></li>
+        <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Safety Information</a></li>
+        <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Book Now</a></li>
+        <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Experience the Thrill of Wildewater Rafting!</h1>
+      <a href="http://127.0.0.1:5500/rafting/rafting.html#" class="cta-btn">Book Your Adventure Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Wildwater Rafting offers thrilling river adventures for all skill levels. Whether you are a beginner or an expert, we have the perfect rafting experience for you.</p>
+    <div class="features">
+      <div class="feature">
+        <img src="./Wildwater Rafting_files/helmet-icon.png" alt="Helmet Icon">
+        <p>Safety First</p>
+      </div>
+      <div class="feature">
+        <img src="./Wildwater Rafting_files/paddle-icon.png" alt="Paddle Icon">
+        <p>Expert Guides</p>
+      </div>
+      <div class="feature">
+        <img src="./Wildwater Rafting_files/raft-icon.png" alt="Raft Icon">
+        <p>Family Friendly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rafting Packages Section -->
+  <section class="packages">
+    <h2>Rafting Packages</h2>
+    <div class="package-card">
+      <h3>Beginner’s Rafting Adventure</h3>
+      <p>Suitable for families and beginners. Experience gentle rapids.</p>
+      <p><strong>$99</strong></p>
+      <a href="http://127.0.0.1:5500/rafting/rafting.html#" class="cta-btn">Book Now</a>
+    </div>
+    <div class="package-card">
+      <h3>Advanced Rapids Experience</h3>
+      <p>For thrill-seekers! Navigate challenging wildewater rapids.</p>
+      <p><strong>$159</strong></p>
+      <a href="http://127.0.0.1:5500/rafting/rafting.html#" class="cta-btn">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Adventurers Say</h2>
+    <div class="testimonial">
+      <p>"An unforgettable experience! The guides were amazing and the rapids were exhilarating!"</p>
+      <div class="rating">★★★★★</div>
+    </div>
+    <div class="testimonial">
+      <p>"Perfect for families. Our kids loved the adventure, and we felt totally safe!"</p>
+      <div class="rating">★★★★★</div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Terms &amp; Conditions</a></li>
+      <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Privacy Policy</a></li>
+      <li><a href="http://127.0.0.1:5500/rafting/rafting.html#">Contact</a></li>
+    </ul>
+    <div class="social-links">
+      <a href="http://127.0.0.1:5500/rafting/rafting.html#">Facebook</a>
+      <a href="http://127.0.0.1:5500/rafting/rafting.html#">Instagram</a>
+      <a href="http://127.0.0.1:5500/rafting/rafting.html#">Twitter</a>
+    </div>
+  </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

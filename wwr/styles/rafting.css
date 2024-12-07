@@ -1,0 +1,151 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #006400; /* Dark Green */
+    --secondary-color: #F1F1F1; /* Light Gray */
+    --accent-color: #FF6347; /* Tomato */
+    --link-color: #0000EE; /* Blue for Links */
+    --text-color: #333333; /* Dark Gray for Text */
+    --heading-color: #2C6E2F; /* Slightly lighter green for headings */
+    --footer-bg-color: #333333; /* Dark background for footer */
+    --footer-text-color: #FFFFFF; /* White text in footer */
+}
+
+/* General Body and Typography Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--heading-color);
+    margin: 0;
+    padding: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url('path-to-hero-image.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Heading inside Hero Section */
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+/* Article within Hero Section */
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+/* Image inside Article */
+.hero article img {
+    float: right;
+    margin-left: 15px;
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Styling Social Media Image Links */
+footer a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Remove default underline from social media image links */
+footer a {
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Links */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Main Content Section */
+main {
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Limiting the width of the page */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for Social Media Links in Footer */
+footer a {
+    text-decoration: none; /* Remove underline from social media links */
+}
+
+/* General Link Styles */
+a {
+    text-decoration: underline; /* Keep underlines for regular links */
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}

@@ -1,0 +1,110 @@
+nav {
+    background-color: darkblue; /* Sets the background color to darkblue */
+    padding: 10px; /* Sets padding around the content to 10 pixels */
+}
+
+
+nav a {
+    color: white; /* Sets the foreground (font) color to white */
+    display: block; /* Changes display from inline to block */
+    padding: 20px; /* Adds padding of 20px to each anchor element */
+}
+
+
+
+h1 {
+    color: darkblue; /* Sets the foreground (font) color to darkblue */
+}
+
+
+
+
+img {
+    width: 100%; /* Sets the width to 100% of its container, adjust as needed */
+    height: auto; /* Automatically adjusts the height to maintain the aspect ratio */
+    border: 5px solid black; /* Adds a 5px solid black border around the image */
+    padding: 10px; /* Adds padding between the image and the border */
+    box-shadow: 0 0 30px gray; /* Adds a gray shadow with zero offset and a 30px blur */
+}
+
+
+
+
+
+p {
+    padding: 10px; /* Adds 10px padding between the content and the border of the paragraph */
+}
+
+
+
+
+main {
+    max-width: 1200px; /* Limits the width to 1200px */
+    margin: 0 auto;    /* Centers the main content horizontally */
+    padding: 20px;     /* Optional: Adds padding for better readability */
+}
+
+
+aside {
+    width: 300px;              /* Sets the width of the aside element */
+    margin: 20px;              /* Adds margin around the aside element */
+    border: 2px solid darkblue; /* Adds a 2px solid dark blue border around the aside element */
+    padding: 15px;             /* Adds padding inside the aside element */
+    background-color: lightblue; /* Sets the background color of the aside element */
+    color: darkblue;           /* Sets the text color inside the aside element */
+}
+
+
+
+
+aside img {
+    width: 200px;     /* Sets the width of the image to 200 pixels */
+    height: auto;     /* Automatically adjusts the height to maintain the aspect ratio */
+}
+
+
+
+
+main img {
+    width: 100%;        /* Sets the width to 100% of its container */
+    height: auto;       /* Automatically adjusts the height to maintain the aspect ratio */
+    border: 5px solid black; /* Adds a 5px solid black border around the image */
+    padding: 10px;      /* Adds padding between the image and the border */
+    box-shadow: 0 0 30px gray; /* Adds a gray shadow with zero offset and a 30px blur */
+}
+
+
+
+
+
+aside img {
+    width: 200px;       /* Sets the width of the image inside aside to 200px */
+    height: auto;       /* Automatically adjusts the height to maintain the aspect ratio */
+}
+
+
+
+
+p {
+    padding: 0;  /* Removes padding around the paragraph */
+}
+
+
+
+
+
+footer {
+    margin-top: 20px;           /* Adds a top margin to separate the footer from the main content */
+    border-top: 2px solid darkblue; /* Adds a top border with a solid dark blue color */
+    text-align: center;         /* Aligns the text in the footer to the center */
+}
+
+
+
+
+
+
+
+
+
+
