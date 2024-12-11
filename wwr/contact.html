@@ -1,161 +1,13 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rafting Adventures</title>
-
-    <!-- Link to Google Fonts -->
+    <title>Contact Us - Rafting Adventures</title>
+    <meta name="description" content="Contact Rafting Adventures for inquiries, reservations, or feedback. We are here to assist you with all your rafting needs!">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <style>
-        /* General Body and Typography Styles */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        h1, h2 {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        /* Header */
-        header {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            align-items: center;
-            padding: 1rem;
-            background-color: #006400;
-            color: white;
-            width: 100%;
-        }
-
-        /* Logo */
-        #logo img {
-            height: 50px;
-        }
-
-        /* Navigation */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #FFD700;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 400px;
-            background-image: url('path-to-hero-image.jpg'); /* Replace with your hero image URL */
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            color: white;
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-        }
-
-        /* Main Content */
-        main {
-            padding: 20px;
-        }
-
-        /* History Section */
-        section.history {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 40px 0;
-        }
-
-        section.history h2 {
-            color: #006400;
-            margin-bottom: 10px;
-        }
-
-        section.history p {
-            max-width: 800px;
-            line-height: 1.6;
-        }
-
-        /* Adventure Section */
-        section.adventure {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 40px;
-        }
-
-        section.adventure figure {
-            margin: 0;
-            position: relative;
-        }
-
-        section.adventure img {
-            width: 100%;
-            height: auto;
-        }
-
-        section.adventure figcaption {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 10px 0;
-        }
-
-        footer div {
-            display: flex;
-            justify-content: flex-end;
-            gap: 15px;
-        }
-
-        footer img {
-            width: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="rafting.css">
 </head>
 <body>
 
@@ -164,7 +16,6 @@
     <div id="logo">
         <img src="path-to-logo.png" alt="Rafting Adventures Logo" height="50">
     </div>
-
     <!-- Navigation -->
     <nav>
         <ul>
@@ -177,49 +28,72 @@
 </header>
 
 <main>
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Rafting Adventures</h1>
-    </div>
+    <!-- Company Information Section -->
+    <section class="company-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong>  Oginga Odinga Road, Kisumu City, Adventure Land</p>
+        <p><strong>Phone:</strong> (254) 740131875 738770298</p>
+        <p><strong>Email:</strong> <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a></p>
 
-    <!-- Article -->
-    <article>
-        <img src="path-to-client-image.jpg" alt="Happy Client">
-        <p>Our mission is to provide thrilling rafting experiences that bring families and friends together for an unforgettable adventure!</p>
-    </article>
-
-    <!-- History Section -->
-    <section class="history">
-        <h2>History</h2>
-        <p>Founded in 1995, Rafting Adventures has been providing thrilling water experiences for adventurers worldwide. Our roots are in the heart of the Rockies, and our passion for adventure has only grown since.</p>
+        <!-- Embedded Google Map -->
+        <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
-    <!-- Adventure Section -->
-    <section class="adventure">
-        <figure>
-            <img src="path-to-rafting-image1.jpg" alt="Los Dientes del Diablo">
-            <figcaption>Los Dientes del Diablo</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image2.jpg" alt="Big Mallard">
-            <figcaption>Big Mallard</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image3.jpg" alt="Half Day Adventure">
-            <figcaption>Half Day Adventure</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image4.jpg" alt="Challenger Rapids">
-            <figcaption>Challenger Rapids</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image5.jpg" alt="River of Fire">
-            <figcaption>River of Fire</figcaption>
-        </figure>
+    <!-- Video Demonstration Section -->
+    <section class="video-demo">
+        <h2>Watch Our Rafting Adventures!</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section class="employee-profiles">
+        <h2>Meet Our Team</h2>
+        <div class="employee">
+            <img src="employee1.jpg" alt="Esther Rouzete - Lead Rafting Guide">
+            <figcaption>Esther Rouzete - Lead Rafting Guide</figcaption>
+        </div>
+        <div class="employee">
+            <img src="employee2.jpg" alt="Vallary Akinyi - Safety Coordinator">
+            <figcaption>Vallary Akinyi - Safety Coordinator</figcaption>
+        </div>
+        <div class="employee">
+            <img src="employee3.jpg" alt="Mike Alando - River Expert">
+            <figcaption>Opot Alando - River Expert</figcaption>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="purpose">Purpose of Your Message</label>
+            <input type="radio" name="purpose" value="General Inquiry" id="general-inquiry" required>
+            <label for="general-inquiry">General Inquiry</label>
+            <input type="radio" name="purpose" value="Reservation Question" id="reservation-question" required>
+            <label for="reservation-question">Reservation Question</label>
+            <input type="radio" name="purpose" value="Website Suggestion" id="website-suggestion" required>
+            <label for="website-suggestion">Website Suggestion</label>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 </main>
 
-<!-- Footer -->
 <footer>
     <p>&copy; 2024 Rafting Adventures. Designed by Jimmy Opot Alando.</p>
     <div>
@@ -227,8 +101,8 @@
         <a href="https://twitter.com" target="_blank"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
         <a href="https://instagram.com" target="_blank"><img src="path-to-instagram-icon.png" alt="Instagram"></a>
     </div>
+    <a href="contact-wireframe.png" target="_blank">View Contact Us Wireframe</a>
 </footer>
 
 </body>
 </html>
-
