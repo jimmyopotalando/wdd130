@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,6 +179,22 @@
         footer img {
             width: 30px;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            section.adventure {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -214,6 +227,12 @@
         <img src="path-to-client-image.jpg" alt="Happy Client">
         <p>Our mission is to provide thrilling rafting experiences that bring families and friends together for an unforgettable adventure!</p>
     </article>
+
+    <!-- History Section -->
+    <section class="history">
+        <h2>History</h2>
+        <p>Founded in 1995, Rafting Adventures has been providing thrilling water experiences for adventurers worldwide. Our roots are in the heart of the Rockies, and our passion for adventure has only grown since then. We take pride in offering safe, fun, and unforgettable rafting trips for all skill levels. Our expert guides ensure that each journey is filled with excitement, camaraderie, and a deep appreciation for nature's beauty.</p>
+    </section>
 
     <!-- Adventure Section -->
     <section class="adventure">
