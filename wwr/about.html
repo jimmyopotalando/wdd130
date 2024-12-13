@@ -1,273 +1,83 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rafting Adventures</title>
+    <title>About Us - Rafting Adventures</title>
 
-    <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* CSS Variables for Colors */
-        :root {
-            --main-green: #006400;
-            --golden-yellow: #FFD700;
-            --dark-gray: #333;
-            --white: #fff;
-        }
-
-        /* General Body and Typography Styles */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        h1, h2 {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        /* Header */
-        header {
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            align-items: center;
-            padding: 1rem;
-            background-color: var(--main-green);
-            color: var(--white);
-            width: 100%;
-        }
-
-        /* Logo */
-        #logo img {
-            height: 50px;
-        }
-
-        /* Navigation */
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--white);
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: var(--golden-yellow);
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 400px;
-            background-image: url('path-to-hero-image.jpg'); /* Replace with your hero image URL */
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            color: var(--white);
-        }
-
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3rem;
-        }
-
-        /* Main Content */
-        main {
-            padding: 20px;
-        }
-
-        /* Article Section */
-        article {
-            position: relative;
-            margin-top: 20px;
-        }
-
-        article img {
-            float: right;
-            margin-left: 20px;
-            max-width: 300px;
-            height: auto;
-        }
-
-        /* History Section */
-        section.history {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 40px 0;
-        }
-
-        section.history h2 {
-            color: var(--main-green);
-            margin-bottom: 10px;
-        }
-
-        section.history p {
-            max-width: 800px;
-            line-height: 1.6;
-        }
-
-        /* Adventure Section */
-        section.adventure {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 40px;
-        }
-
-        section.adventure figure {
-            margin: 0;
-            position: relative;
-        }
-
-        section.adventure img {
-            width: 100%;
-            height: auto;
-        }
-
-        section.adventure figcaption {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: var(--white);
-            padding: 10px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark-gray);
-            color: var(--white);
-            padding: 10px;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 10px 0;
-        }
-
-        footer div {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        footer a {
-            text-decoration: none;
-        }
-
-        footer img {
-            width: 30px;
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            section.adventure {
-                grid-template-columns: 1fr;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
 
-<header>
-    <!-- Logo -->
-    <div id="logo">
-        <img src="path-to-logo.png" alt="Rafting Adventures Logo" height="50">
-    </div>
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <img src="images/logo.png" alt="Rafting Adventures Logo" height="50">
+        </div>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="trips.html">Trips</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Rafting Adventures</h1>
-    </div>
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Rafting Adventure Background">
+            <h1>Rafting Adventures</h1>
+            <article>
+                <img src="images/client-happy.jpg" alt="Happy Client">
+                <p>Join us for an unforgettable rafting experience! Our mission is to provide thrilling adventures for families and friends, no matter their skill level.</p>
+            </article>
+        </div>
 
-    <!-- Article Section -->
-    <article>
-        <img src="path-to-client-image.jpg" alt="Happy Client">
-        <p>Our mission is to provide thrilling rafting experiences that bring families and friends together for an unforgettable adventure!</p>
-    </article>
+        <!-- History Section -->
+        <section class="history">
+            <h2>History</h2>
+            <p>Founded in 1995, Rafting Adventures has been offering exciting water adventures to thrill-seekers worldwide. With a foundation rooted in the heart of the Rockies, we continue to deliver safe, fun, and exhilarating rafting trips for all skill levels.</p>
+        </section>
 
-    <!-- History Section -->
-    <section class="history">
-        <h2>History</h2>
-        <p>Founded in 1995, Rafting Adventures has been providing thrilling water experiences for adventurers worldwide. Our roots are in the heart of the Rockies, and our passion for adventure has only grown since then. We take pride in offering safe, fun, and unforgettable rafting trips for all skill levels. Our expert guides ensure that each journey is filled with excitement, camaraderie, and a deep appreciation for nature's beauty.</p>
-    </section>
+        <!-- Adventure Section -->
+        <section class="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
+            <img src="images/rafting2.jpg" alt="Big Mallard">
+            <img src="images/rafting3.jpg" alt="Half Day Adventure">
+            <img src="images/rafting4.jpg" alt="Challenger Rapids">
+            <img src="images/rafting5.jpg" alt="River of Fire">
+        </section>
+    </main>
 
-    <!-- Adventure Section -->
-    <section class="adventure">
-        <figure>
-            <img src="path-to-rafting-image1.jpg" alt="Los Dientes del Diablo">
-            <figcaption>Los Dientes del Diablo</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image2.jpg" alt="Big Mallard">
-            <figcaption>Big Mallard</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image3.jpg" alt="Half Day Adventure">
-            <figcaption>Half Day Adventure</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image4.jpg" alt="Challenger Rapids">
-            <figcaption>Challenger Rapids</figcaption>
-        </figure>
-        <figure>
-            <img src="path-to-rafting-image5.jpg" alt="River of Fire">
-            <figcaption>River of Fire</figcaption>
-        </figure>
-    </section>
-</main>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Rafting Adventures. Designed by Jimmy Opot Alando.</p>
-    <div>
-        <a href="https://facebook.com" target="_blank"><img src="path-to-facebook-icon.png" alt="Facebook"></a>
-        <a href="https://twitter.com" target="_blank"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
-        <a href="https://instagram.com" target="_blank"><img src="path-to-instagram-icon.png" alt="Instagram"></a>
-    </div>
-</footer>
+    <footer>
+        <p>&copy; 2024 Rafting Adventures. Designed by Jimmy Opot Alando.</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
 
 </body>
+
 </html>
