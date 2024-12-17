@@ -1,39 +1,43 @@
+/* Main content width */
 main {
     max-width: 840px;
 }
 
+/* Aside styling */
 aside {
-    width: 20rem;
-    margin: 1rem;
+    width: 20rem; /* Set a fixed width for the aside */
+    margin: 1rem; /* Add margin around the aside */
     border: 1px solid rgb(0 0 0 / 0.2); /* Subtle transparent border */
-    padding: 1rem;
+    padding: 1rem; /* Add padding inside the aside */
     background-color: #eee; /* Light gray background */
     color: #333; /* Dark text color */
     text-align: center; /* Center-align text */
 }
 
+/* Aside image styling */
 aside img {
-    width: 200px;
-    height: auto;
+    width: 200px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
 }
 
-
+/* More specific image selector for profile image */
 main img {
-    width: 150px;
-    height: auto;
+    width: 150px; /* Adjusted width for profile image */
+    height: auto; /* Maintain aspect ratio */
 }
 
-
+/* Paragraph styling (removing padding) */
 p {
-    padding: 0;
+    padding: 0; /* No padding */
 }
 
-
+/* Footer styling */
 footer {
     margin-top: 15px; /* Space above the footer */
     border-top: 1px solid #000; /* Black top border */
-    text-align: center; /* Center-align the text */
+    text-align: center; /* Center-align text in the footer */
 }
+
 
 
 
