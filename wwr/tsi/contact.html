@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Town Spy Investigators</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Town Spy Investigators</h1>
+            <p>Your Trusted Investigative Partner</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company Information Section -->
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong>  Oginga Odinga Road, Kisumu City, Adventure Land</p>
+            <p><strong>Phone:</strong> (254) 740131875 738770298</p>
+            <p><strong>Email:</strong> <a href="mailto:info@townspyinvestigators.com">info@townspyinvestgators.com</a></p>
+    
+            <!-- Embedded Google Map -->
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="purpose">Purpose of Your Message</label>
+            <input type="radio" name="purpose" value="General Inquiry" id="general-inquiry" required>
+            <label for="general-inquiry">General Inquiry</label>
+            <input type="radio" name="purpose" value="Reservation Question" id="reservation-question" required>
+            <label for="reservation-question">Reservation Question</label>
+            <input type="radio" name="purpose" value="Website Suggestion" id="website-suggestion" required>
+            <label for="website-suggestion">Website Suggestion</label>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+            </label>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+
+
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or require our services, please reach out to us. We're here to help!</p>
+        <p><strong>Email:</strong> townspyinvestigators@gmail.com</p>
+        <p><strong>Phone:</strong> 0740131875</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Town Spy Investigators. All rights reserved.</p>
+        <div>
+            <a href="https://facebook.com" target="_blank"><img src="path-to-facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="path-to-twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="path-to-instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <a href="contact-wireframe.png" target="_blank">View Contact Us Wireframe</a>
+
+
+    </footer>
+</body>
+</html>

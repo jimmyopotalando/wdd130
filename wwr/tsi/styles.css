@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    color: #003366;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+.why-choose-us ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.why-choose-us li {
+    margin: 10px 0;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+}
+
+.services ul {
+    margin-left: 20px;
+}
+
+.services ul li {
+    margin-bottom: 10px;
+}
