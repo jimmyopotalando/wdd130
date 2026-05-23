@@ -1,48 +1,80 @@
+:root {
+    /* Fonts */
+    --main-font: Arial, sans-serif;
+
+    /* Colors */
+    --primary-color: #333;
+    --heading-color: #003366;
+    --light-text-color: #ffffff;
+    --border-color: #000000;
+    --box-background-color: #eeeeee;
+    --shadow-color: gray;
+
+    /* Spacing */
+    --standard-padding: 1rem;
+    --small-padding: 2px;
+    --standard-margin: 1rem;
+
+    /* Borders */
+    --standard-border: 1px solid var(--border-color);
+    --light-border: 1px solid rgb(0 0 0 / 10%);
+
+    /* Shadows */
+    --image-shadow: 0 0 30px var(--shadow-color);
+}
+
+/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
+/* Navigation */
 nav {
-    background-color: #333;
-    padding: 1rem;
+    background-color: var(--primary-color);
+    padding: var(--standard-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--light-text-color);
     padding: 20px;
     display: block;
     text-decoration: none;
 }
 
+/* Heading */
 h1 {
-    color: #003366;
+    color: var(--heading-color);
 }
 
+/* Main Content */
 main {
     max-width: 840px;
-    margin: 1rem;
+    margin: var(--standard-margin);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #000;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--standard-border);
+    padding: var(--small-padding);
+    box-shadow: var(--image-shadow);
     float: right;
-    margin-left: 1rem;
+    margin-left: var(--standard-margin);
 }
 
+/* Paragraph Styling */
 p {
     padding: 0;
 }
 
+/* Aside Section */
 aside {
     width: 20rem;
     text-align: center;
@@ -58,21 +90,21 @@ aside h2 {
     position: absolute;
     top: 20px;
     left: 60px;
-    color: white;
+    color: var(--light-text-color);
 }
 
+/* Footer */
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--standard-border);
     text-align: center;
 }
 
 /* Class Selectors */
-
 .box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #eeeeee;
-    color: #000;
+    margin: var(--standard-margin);
+    border: var(--light-border);
+    padding: var(--standard-padding);
+    background-color: var(--box-background-color);
+    color: var(--border-color);
 }
