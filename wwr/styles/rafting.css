@@ -26,6 +26,8 @@ footer {
     margin: 0 auto;
 }
 
+/* Header */
+
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -37,18 +39,29 @@ header {
 
 header img {
     width: 120px;
+    height: auto;
 }
+
+/* Navigation */
 
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem;
 }
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* Typography */
 
 h1,
 h2 {
@@ -56,13 +69,14 @@ h2 {
     color: var(--primary-color);
 }
 
-nav,
 p,
 section,
 article {
     margin: 16px;
     padding: 8px;
 }
+
+/* Hero Section */
 
 .hero {
     position: relative;
@@ -78,16 +92,17 @@ article {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
+    padding: 16px;
+    background-color: rgb(38 70 83 / 85%);
     color: white;
 }
 
 .hero article {
     position: absolute;
     bottom: 20px;
+    left: 20px;
+    right: 20px;
     background-color: rgb(255 255 255 / 80%);
 }
 
@@ -97,9 +112,57 @@ article {
     margin-left: 1rem;
 }
 
-section {
+/* History Section */
+
+.history {
     background-color: var(--secondary-color);
+    text-align: center;
 }
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Adventures Section */
+
+.adventures {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Footer */
 
 footer {
     display: flex;
@@ -110,10 +173,16 @@ footer {
     padding: 1rem 0;
 }
 
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
     width: 32px;
+    height: 32px;
 }
