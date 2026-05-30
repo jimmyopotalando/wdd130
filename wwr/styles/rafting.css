@@ -17,12 +17,15 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #ffffff;
 }
+
+/* Layout Width */
 
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -61,12 +64,17 @@ nav a:hover {
     color: var(--accent2-color);
 }
 
+nav a:focus {
+    outline: 2px solid var(--accent2-color);
+    outline-offset: 2px;
+}
+
 /* Typography */
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 p,
@@ -122,8 +130,8 @@ article {
 .history-content {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    align-items: center;
     gap: 1rem;
+    align-items: center;
 }
 
 .history-content img {
@@ -158,8 +166,8 @@ article {
 
 .adventure-gallery figcaption {
     margin-top: 0.5rem;
-    font-weight: bold;
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
 /* Footer */
