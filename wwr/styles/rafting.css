@@ -1,3 +1,6 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
 :root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
@@ -8,19 +11,25 @@
     --body-font: Arial, sans-serif;
 }
 
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   GLOBAL STYLES
+========================= */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #ffffff;
 }
 
-/* Layout */
+/* Layout wrapper */
 header,
 main,
 footer {
@@ -28,7 +37,15 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+/* =========================
+   HEADER & NAV
+========================= */
 header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -42,7 +59,6 @@ header img {
     width: 120px;
 }
 
-/* NAV */
 nav {
     display: flex;
     justify-content: space-around;
@@ -54,16 +70,34 @@ nav a {
     font-weight: bold;
 }
 
-/* HEADINGS */
-h1,
-h2 {
-    font-family: var(--heading-font);
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* =========================
-   CONTACT PAGE STYLES
+   FOOTER
 ========================= */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+}
 
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 32px;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
 .contact-info {
     text-align: center;
     padding: 1rem;
@@ -94,6 +128,7 @@ h2 {
     border: 2px solid var(--accent1-color);
 }
 
+/* Contact Form */
 .contact-form {
     padding: 1rem;
 }
@@ -101,6 +136,11 @@ h2 {
 .contact-form form {
     display: grid;
     gap: 1rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form input,
@@ -112,8 +152,7 @@ h2 {
 }
 
 .contact-form label {
-    display: block;
-    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .contact-form input[type="radio"],
@@ -136,21 +175,153 @@ h2 {
     background-color: var(--accent1-color);
 }
 
-/* FOOTER */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* =========================
+   HOME PAGE
+========================= */
+
+/* Hero */
+.home-hero {
+    position: relative;
+}
+
+.home-hero img {
+    width: 100%;
+    display: block;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    background-color: rgba(38, 70, 83, 0.75);
+    color: white;
+    padding: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* CTA */
+.home-cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+}
+
+.cta-button {
+    display: inline-block;
     margin-top: 1rem;
-    border-top: 1px solid #ccc;
-    padding: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.socialmedia {
-    display: flex;
-    gap: 10px;
+.cta-button:hover {
+    background-color: var(--accent1-color);
 }
 
-.socialmedia img {
-    width: 32px;
+/* Home Grid */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* =========================
+   TRIPS PAGE
+========================= */
+
+/* CTA */
+.trip-cta {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent2-color);
+}
+
+/* Trip Grid */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.trip-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Trip Table */
+.trip-table {
+    padding: 1rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
 }
